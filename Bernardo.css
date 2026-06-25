@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Comic+Relief:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Exo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.rodape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  background-color: #046d38;
+  height: 25rem;
+}
+
+.Termos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: fit-content;
+  justify-content: space-between;
+  height: 20rem;
+  gap: 9rem;
+}
+
+.Termos-baixo h2 {
+  padding-bottom: 1rem;
+}
+
+.Termos-baixo img {
+    padding-top: 1rem;
+}
+
+.Termos h2 {
+  font-family: "Poppins";
+  color: #fff;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 119%;
+  letter-spacing: -0.06231rem;
+}
+
+.Appstore {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Parte da Navegação */
+
+.navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.25rem;
+  height: 5.75rem;
+  background-color: #001207;
+}
+
+.navegacao img {
+    height: 7.5vh;
+}
+
+.lista-navegacao,
+.lista-navegacao li,
+li a {
+  align-items: center;
+  align-content: center;
+  display: flex;
+  gap: 2.25rem;
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 1.53056rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 119%;
+  letter-spacing: -0.04594rem;
+}
+
+.lista-navegacao li a:hover {
+    text-decoration: underline;
+}
