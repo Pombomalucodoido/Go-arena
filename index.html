@@ -1,24 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Go arena</title>
-    <link rel="stylesheet" href="pedro.css">
-</head>
-<body>
+    <link rel="stylesheet" href="pedro.css" />
+  </head>
+  <body>
     <main>
-        <section class="lead">
-            <div class="articles">
-                <h1><strong>Chega</strong> de perder tempo no WhatsApp para garantir a sua partida.</h1>
-                <div class="caixa"><img src="test.png" alt=""></div>
+      <section class="lead">
+        <div class="articles">
+          <h1>
+            <strong>Chega</strong> de perder tempo no WhatsApp para garantir a
+            sua partida.
+          </h1>
+          <div class="caixa"><img src="img/test.png" alt="" /></div>
+        </div>
+        <div class="articles">
+          <div class="caixa"><img src="img/test.png" alt="" /></div>
+          <h1>
+            Com o app do <strong>GO</strong> você reserva quadras de forma muito
+            fácil!
+          </h1>
+        </div>
+        <button>Baixar App</button>
+      </section>
+      <section class="beneficios">
+        <div class="beneficios-content">
+          <h2 class="titulo">Benefícios do <strong>GO</strong></h2>
+          <div class="beneficios-container">
+            <h3>Reservas em 1 minuto!</h3>
+            <p>
+              Esqueça as ligações e mensagens demoradas no whatsApp. Encontre a
+              quadra ideal, escolha o horario e depois só jogar!
+            </p>
+          </div>
+          <div class="beneficios-container">
+            <h3>Divida o valor com a galera</h3>
+            <p>
+              Chega de cobrar seus amigos depois do jogo! Nosso sistema calcula
+              e gera cobranças automáticas para cada jogador pagar sua parte via
+              pix.
+            </p>
+          </div>
+          <div class="beneficios-container">
+            <h3>As melhores quadras!</h3>
+            <p>
+              Filtre por tipo de piso(futsal, society ou campo), cobertura,
+              vestiários e churrasqueiras disponiveis na sua região!
+            </p>
+          </div>
+        </div>
+        <div class="barra-rolagem">
+          <div class="campo">
+            <img src="img/Bola.png" alt="" class="bola" />
+          </div>
+        </div>
+      </section>
+      <section class="depoimentos">
+        <h2 class="titulo">O que nossos clientes dizem</h2>
+        <div class="depoimentos-grid">
+          <div class="depoimento-container">
+            <div class="upper">
+              <div>
+                <img src="img/image 4.png" alt="" />
+                <h3>Bernardo</h3>
+              </div>
+              <img src="img/estrelas.png" alt="" class="estrelas" />
             </div>
-            <div class="articles">
-                <div class="caixa"><img src="test.png" alt=""></div>
-                <h1>Com o app do <strong>GO</strong> você reserva quadras de forma muito fácil!</h1>
+            <p>
+              Esse app é bão sô. Pode confiar que eu nunca fui pago para dizer
+              isso!
+            </p>
+          </div>
+          <div class="depoimento-container">
+            <div class="upper">
+              <div>
+                <img src="img/image 3.png" alt="" />
+                <h3>Gabriel</h3>
+              </div>
+              <img src="img/estrelas.png" alt="" class="estrelas" />
             </div>
-            <button>Baixar App</button>
-        </section>
+            <p>
+              Esse app é bão sô. Pode confiar que eu nunca fui pago para dizer
+              isso!
+            </p>
+          </div>
+          <div class="depoimento-container">
+            <div class="upper">
+              <div>
+                <img src="img/image 9.png" alt="" />
+                <h3>Pedro</h3>
+              </div>
+              <img src="img/estrelas.png" alt="" class="estrelas" />
+            </div>
+            <p>
+              Esse app é bão sô. Pode confiar que eu nunca fui pago para dizer
+              isso!
+            </p>
+          </div>
+          <div class="depoimento-container">
+            <div class="upper">
+              <div>
+                <img src="img/Vector.png" alt="" />
+                <h3>Victoria</h3>
+              </div>
+              <img src="img/estrelas.png" alt="" class="estrelas" />
+            </div>
+            <p>
+              Esse app é bão sô. Pode confiar que eu nunca fui pago para dizer
+              isso!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="FAQ">
+        <h2 class="titulo">Perguntas Frequentes</h2>
+      <div class="faq-container">
+            <h3>O Aplicativo é pago?</h3>
+            <p>
+              O aplicativo é totalmente gratuito, o único custo que você deve se preocupar é o das quadras 😉
+            </p>
+          </div>
+        <div class="faq-container">
+            <h3>Quais tipos de quadra tem?</h3>
+            <p>
+              Nosso aplicativo permite o cadastro de todos os tipos de quadra, seja futsal, society ou campo
+            </p>
+          </div>
+        <div class="faq-container">
+            <h3>Marquei horário e quando cheguei tinha gente</h3>
+            <p>
+              Falhas com a agenda do local podem ocorrer pela gerência da quadra aceitar reservas por fora do aplicativo simultaneamente
+            </p>
+          </div>
+        </div>
+      </section>
+      <script>
+        const ball = document.querySelector(".bola");
+        const track = document.querySelector(".campo");
+
+        function updateBall() {
+          const scrollTop = window.scrollY;
+          const maxScroll =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+          const progress = scrollTop / maxScroll;
+
+          const maxMove = track.offsetHeight - ball.offsetHeight;
+
+          ball.style.top = `${progress * maxMove}px`;
+        }
+
+        window.addEventListener("scroll", updateBall);
+        window.addEventListener("resize", updateBall);
+
+        updateBall();
+      </script>
     </main>
-</body>
+  </body>
 </html>
