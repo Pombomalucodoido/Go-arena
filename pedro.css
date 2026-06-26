@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: #001207;
+}
+
+/* Aqui começa a parte do lead */
+
+.lead {
+  color: white;
+  font-family: "Inter", "Poppins";
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lead h1 {
+  font-family: "Poppins", "Inter";
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.caixa {
+  width: 70%;
+}
+
+strong {
+  color: #0dc043;
+  font-weight: 700;
+}
+.articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead button {
+  background-color: #0dc043;
+  padding: 2.4rem 16rem;
+  border-radius: 100px;
+  color: white;
+  font-size: 3.5rem;
+  font-family: "Poppins", "Inter";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* Aqui começa a parte dos benefícios */
+.beneficios {
+  margin: 10vh auto;
+  font-family: "Inter", "Poppins";
+  width: 70vw;
+  display: flex;
+  gap: 10vh;
+}
+
+.beneficios-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 4vh;
+  width: 80%;
+}
+
+.beneficios-container {
+  background-color: white;
+  width: 40vw;
+  padding: 5vh 2vw;
+  border-radius: 24px;
+}
+.beneficios-container h3 {
+  font-family: "Poppins", "Inter";
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #024723;
+}
+
+.beneficios-container p {
+  padding-top: 0.5rem;
+  font-family: "Inter", "Poppins";
+  font-size: 1.5rem;
+  width: 95%;
+}
+
+.titulo {
+  font-family: "Poppins", "Inter";
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.campo {
+  padding-top: 5vh;
+  width: 2vw;
+  height: 85vh;
+  background-color: #046d38;
+  border-radius: 20px;
+  position: relative;
+}
+
+.bola {
+  position: absolute;
+  top: 0px;
+  translate: -40% 0;
+}
+/* Aqui começa os estilos da seção `depoimentos` */
+
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10vh;
+  width: 70vw;
+  margin: 20vh auto 0 auto;
+}
+
+.depoimentos-grid {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5vh;
+  width: 80vw;
+}
+
+.depoimento-container {
+  width: 30%;
+  background-color: white;
+  padding: 3vh 4vh 8vh 4vh;
+  border-radius: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7vh;
+}
+
+.depoimento-container div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vh;
+}
+
+.depoimento-container p {
+  padding-top: 0.5rem;
+  font-family: "Inter", "Poppins";
+  font-size: 1.5rem;
+  text-align: justify;
+}
+
+.upper {
+  width: 100%;
+}
+.upper div {
+  display: flex;
+  gap: 1vh;
+  align-items: center;
+}
+
+.upper h3 {
+  font-family: "Poppins", "Inter";
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.estrelas {
+  width: 15vh;
+  height: 3vh;
+}
+
+/* Aqui inicia a estilização principal do FAQ */
+
+.FAQ {
+  margin: 20vh auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 10vh;
+  width: 80vw;
+}
+
+.faq-container {
+  background-color: white;
+  width: 70vw;
+  padding: 5vh 2vw;
+  border-radius: 24px;
+}
+
+.faq-container h3 {
+  font-family: "Poppins", "Inter";
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #024723;
+}
+
+.faq-container p {
+  padding-top: 0.5rem;
+  font-family: "Inter", "Poppins";
+  font-size: 1.5rem;
+  width: 95%;
+}
